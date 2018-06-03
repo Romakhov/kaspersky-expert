@@ -1,0 +1,43 @@
+.shares {
+    background-image: url('../img/bg/bg-7.jpg');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider__bg {
+  background: rgba(0,0,0,.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 100%;
+  @include phone {
+    height: 100%;
+  }
+}
+
+.order_slider {
+  background-color: #04A662;
+  text-decoration: none;
+  color: #000;
+  border-radius: 10px;
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 84px;
+  text-transform: uppercase;
+  padding: 22px 30px 22px 30px;
+  line-height: 84px;
+  @include phone {
+    padding: 10px 15px 11px 15px;
+    margin-left: 0;
+}
+}
+
+.slider {
+  width: 1170px;
+}
+

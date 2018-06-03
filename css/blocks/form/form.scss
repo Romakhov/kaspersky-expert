@@ -1,0 +1,172 @@
+.form {
+    background-image: url("../img/bg/bg-5.png");
+    background-size: cover;
+    position: relative;
+}
+
+.connectToUs {
+    color: #fefefe;
+    font-family: 'Russo One';
+    font-size: 45px;
+    font-weight: 400; 
+    letter-spacing: 2px;
+    @include phone {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    @include tablet {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+}
+
+.order__desc {
+    opacity: 0.8;
+    color: #fefefe;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    @include phone {
+        font-size: 15px;
+         margin-bottom: 25px;
+         margin-top: 0;
+         margin-bottom: 0;
+         display: none;
+    }
+
+    @include tablet {
+        font-size: 15px;
+         margin-bottom: 25px;
+         margin-top: 0;
+         margin-bottom: 0;
+         display: none;
+         
+    }
+
+    @include desktop {
+        font-size: 20px;
+         margin-bottom: 15px;
+         margin-top: 0;
+         
+    }
+}
+
+.form {
+    text-align: center;
+    @include phone {
+        width: 80%;
+    }
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1170px;
+    margin: 0 auto;
+    height: 80%;
+    @include phone {
+        width: 86%;
+        height: 75%;
+    }
+
+}
+
+
+.form__row {
+    display: flex;
+}
+
+.form__block {
+    margin-left: 20px;
+    width: 100%;
+
+    &:first-child {
+        margin-left: 0;
+    }
+    
+}
+
+
+.form__input {
+    width: 100%;
+    height: 48px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    @include phone {
+        margin-bottom: 25px;
+        height: 30px;
+    }
+
+    @include desktop {
+        margin-bottom: 25px;
+        height: 50px;
+    }
+
+}
+
+.comment {
+    width: 670px;
+    height: 170px;
+    background-color: #fff;
+    border: none;
+    @include phone {
+        width: 100%;
+        height: 80px;
+    }
+
+    @include desktop {
+        width: 100%;
+        height: 80px;
+    }
+
+}
+
+.submit {
+    background-color: #04A662;
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 22px 30px 22px 30px;
+    text-align: center;
+    margin: 0 auto;
+    border: none;
+    @include phone {
+        padding: 11px 15px 15px 15px
+    }
+}
+
+.footer__order {
+    @include phone {
+      display: none;  
+    }
+    
+}
+
+.footer__adress1 {
+    text-align: center;
+    font-family: Roboto;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    @include phone {
+        display: none;
+    }
+}
+
+.footer__order__button {
+    @include phone {
+        display: none;
+    }
+}

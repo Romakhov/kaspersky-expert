@@ -1,0 +1,40 @@
+.protect {
+    background-image: url('../img/bg/bg-3.png');
+    background-size: cover;
+    position: relative;
+}
+
+
+
+.protect__container {
+    text-align: center;
+}
+
+.protect__title {
+    color: #fefefe;
+    font-family: 'Russo One';
+    font-size: 45px;
+    font-weight: 400;
+    padding-top: 50px;
+    letter-spacing: 2px;
+
+    @include phone {
+        font-size: 25px;
+    }
+    @include tablet {
+        font-size: 35px;
+    }
+
+    @include desktop {
+        font-size: 40px;
+    }
+} 
+
+.protect__order {
+    margin-top: 10px;
+}
+
+
+   
+
+

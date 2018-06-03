@@ -1,0 +1,81 @@
+.footer {
+    width: 100%;
+    height: 20%;
+    background: rgba(0,0,0,.7);
+}
+
+.footer__container {
+    width: 1170px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include phone {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+.footer__adress {
+    text-align: center;
+    font-family: Roboto;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    @include phone {
+        font-size: 12px;
+    }
+
+    @include desktop {
+        font-size: 15px;
+    }
+
+
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+    @include phone {
+        width: 90%;
+    }
+}
+
+.footer__logo {
+    padding-bottom: 10px;
+    width: 280px;
+
+    @include tablet {
+        width: 200px;
+    }
+
+    @include desktop {
+        width: 200px;
+    }
+}
+
+.footer__order {
+    text-align: center;
+    font-family: Roboto;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.footer-block1 {
+    width: 30%;;
+    @include phone {
+        width: 90%;
+    }
+}
+
+.kasper_partner {
+    @include phone {
+        display: none;
+    }
+}

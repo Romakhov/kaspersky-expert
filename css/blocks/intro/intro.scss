@@ -1,0 +1,188 @@
+.intro {
+    background-image: url("../img/bg/bg.png");
+    background-size: cover;
+    position: relative;
+
+}
+
+.intro__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;      
+}
+
+.nav {
+    @include phone {
+        display: none;
+    }
+}
+
+.nav__item {
+    display: flex;
+    list-style-type: none;
+
+}
+
+.nav__link {
+    color: white;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 15px;
+}
+
+.nav__link:hover {
+    color: #04A662;
+}
+
+.logo {
+    width: 140px;
+    @include phone {
+        width: 100px;
+    }
+}
+
+.intro__content {
+    margin-top: 100px;
+    @include phone {
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+.intro__title {
+    color: #fefefe;
+    font-family: 'Russo One';
+    font-size: 45px;
+    font-weight: 400; 
+    letter-spacing: 2px;
+
+    @include phone {
+        font-size: 25px;
+    }
+
+    @include tablet {
+        font-size: 35px;
+    }
+
+    @include desktop {
+        font-size: 40px;
+    }
+}
+
+.intro__description {
+    opacity: 0.6;
+    color: #fefefe;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    @include phone {
+        font-size: 20px;
+    }
+
+    @include tablet {
+        font-size: 23px;
+    }
+}
+
+
+.order {
+    background-color: #04A662;
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 84px;
+    text-transform: uppercase;
+    padding: 22px 30px 22px 30px;
+    line-height: 84px;
+
+    @include phone {
+        padding: 12px 15px 12px 15px;
+        font-size: 12px;
+    }
+
+    @include tablet {
+        padding: 15px 20px 15px 20px;
+        font-size: 12px;
+    }
+
+}
+
+.order:hover {
+    background-color: #005208;
+}
+
+.nav__list {
+    &:last-child {
+        margin-right: 17px;
+    }
+    display: flex;
+    align-items: center;
+
+    &:before {
+        content: "";
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #fff;
+        display: block;
+        margin: 0 20px;
+    }
+
+    &:first-child {
+        &:before {
+            display: none;
+        }
+
+    }
+
+}
+
+
+.org-contact {
+    color: white;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+.header__contacts {
+    display: flex;
+    flex-direction: row;
+
+    @include phone {
+        display: none;
+        
+    }
+}
+
+.date-contacts {
+    color: white;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-size: 20px; 
+    display: flex;
+    padding: 15px;
+}
+
+.contact__icon {
+    width: 20px;
+    padding-right: 5px;
+}
+
+.mail {
+    width: 25px;
+}
+
+
+

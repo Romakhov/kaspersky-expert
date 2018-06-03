@@ -1,0 +1,77 @@
+
+$phone-width: 480px;
+@mixin phone {
+    @media (max-width: #{$phone-width - 1px}) {
+      @content;
+    }
+  }
+
+$tablet-width: 768px;
+@mixin phone {
+    @media (max-width: #{$tablet-width - 1px}) {
+      @content;
+    }
+  }
+
+$desktop-width: 960px;
+  @mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+      @content;
+    }
+  }
+
+  $baseFontSize : 14;
+@function rem($pixels, $context: $baseFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}
+
+.class{
+ font-size:rem(38);
+}
+
+
+
+
+
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+
+
+
+@import "blocks/intro/intro.scss";
+@import "blocks/common/common.scss";
+@import "fonts.scss";
+
+/*Окно popup*/
+@import "popup/popup.scss";
+@import "popup/formPopup.scss";
+
+
+/*Секция cooperation*/
+@import "blocks/cooperation/cooperation.scss";
+
+/*Секция slider*/
+@import "blocks/shares/slider.scss";
+@import "blocks/shares/shares.scss";
+
+/*Секция protect*/
+@import "blocks/protect/protect.scss";
+@import "blocks/protect/tabs.scss";
+
+/*Секция form*/
+@import "blocks/form/form.scss";
+@import "blocks/form/footer.scss";
+
